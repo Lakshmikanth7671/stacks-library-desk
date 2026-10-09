@@ -1,0 +1,21 @@
+:root{--paper:#e6ede8;--ink:#1b2a23;--muted:#5d6b78;--line:#d3d9df;--signal:#1f5d4a;--amber:#9a6b12;--card:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 Figtree,system-ui,sans-serif}
+h1,h2{font-family:"Libre Caslon Text",Georgia,serif;margin:0}
+.wrap{max-width:960px;margin:0 auto;padding:24px 16px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:20px;margin-bottom:20px}
+button,.btn{font:inherit;font-weight:600;border:0;border-radius:4px;padding:8px 14px;background:var(--signal);color:#fff;cursor:pointer}
+button.ghost{background:transparent;color:var(--signal);border:1px solid var(--signal)}button.danger{background:var(--amber)}
+button:disabled{opacity:.5;cursor:wait}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #7cc4d8;outline-offset:1px}
+input,select{font:inherit;padding:8px;border:1px solid var(--line);border-radius:4px;width:100%}
+label{display:block;font-weight:600;margin-bottom:12px}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line)}th{color:var(--muted);font-weight:600}
+.badge{padding:2px 8px;border-radius:99px;font-size:13px;font-weight:600;background:#d3e6dd;color:var(--signal)}.badge.admin{background:#f3e5c4;color:var(--amber)}
+.skeleton{height:14px;border-radius:3px;background:linear-gradient(90deg,#e3e7eb,#f3f5f7,#e3e7eb);background-size:200% 100%;animation:sh 1.2s infinite}
+@keyframes sh{to{background-position:-200% 0}}@media(prefers-reduced-motion:reduce){.skeleton{animation:none}}
+.err{color:var(--amber);font-weight:600}.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.grid label{margin:0}
+[data-theme=dark]{--paper:#101a15;--ink:#e4ede7;--muted:#9aaba1;--line:#25372e;--signal:#6fc7a5;--amber:#e3b25c;--card:#16241d}
+[data-theme=dark] .badge{background:#1f3a2f}[data-theme=dark] .badge.admin{background:#40321a}
+[data-theme=dark] .skeleton{background:linear-gradient(90deg,#1d2c39,#2a3d4d,#1d2c39);background-size:200% 100%}
+[data-theme=dark] button:not(.ghost){color:#101a15}
+.bar{height:10px;border-radius:3px;background:var(--signal);transition:width .3s}.bar.alt{background:var(--amber)}
