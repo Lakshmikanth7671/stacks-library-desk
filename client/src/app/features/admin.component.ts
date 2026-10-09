@@ -47,8 +47,8 @@ export class AdminComponent implements OnInit {
   reset() { this.editing.set(''); this.form.reset({ role: 'General User' }); this.form.controls.id.enable(); this.error.set(''); }
   save() {
     this.busy.set(true); this.error.set('');
-    const v = this.form.getRawValue(); const id = this.editing();
-    (id ? this.svc.update(id, v) : this.svc.create({ ...v, role: v.role as User['role'] }))
+    const v = this.form.getRawValue() as Partial<User>; const id = this.editing();
+    (id ? this.svc.update(id, v) : this.svc.create(v))
       .pipe(finalize(() => this.busy.set(false)))
       .subscribe({ next: () => { this.reset(); this.refresh(); }, error: e => this.error.set(e.message) });
   }
