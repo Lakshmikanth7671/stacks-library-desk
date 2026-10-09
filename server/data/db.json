@@ -1,10 +1,58 @@
-{"users":[
-{"id":"admin","name":"Asha Rao","password":"admin123","role":"Admin","department":"Archives","email":"asha@stacks.example"},
-{"id":"user1","name":"Ravi Kumar","password":"user123","role":"General User","department":"Circulation","email":"ravi@stacks.example"}],
-"records":[
-{"id":1,"title":"The God of Small Things","category":"Fiction","access":"General User"},
-{"id":2,"title":"A Brief History of Time","category":"Science","access":"General User"},
-{"id":3,"title":"Wings of Fire","category":"Biography","access":"General User"},
-{"id":4,"title":"Visakhapatnam Port Ledgers, 1921","category":"Rare Manuscripts","access":"Admin"},
-{"id":5,"title":"Palm-leaf Telugu Almanac","category":"Rare Manuscripts","access":"Admin"},
-{"id":6,"title":"Staff Membership Register","category":"Administration","access":"Admin"}]}
+{
+  "users": [
+    {
+      "id": "admin",
+      "name": "Asha Rao",
+      "password": "$2a$10$QIM8cNXJFBeQg98keEHQveZKNKHMFJRnPgfcTsv7GZaPF9XmQ8.Ju",
+      "role": "Admin",
+      "department": "Archives",
+      "email": "asha@stacks.example"
+    },
+    {
+      "id": "user1",
+      "name": "Ravi Kumar",
+      "password": "$2a$10$qQKR7La84T1RflKv.vj4vOa9HadsNAP7mjJJ00MAFhePBMEVbWO9e",
+      "role": "General User",
+      "department": "Circulation",
+      "email": "ravi@stacks.example"
+    }
+  ],
+  "records": [
+    {
+      "id": 1,
+      "title": "The God of Small Things",
+      "category": "Fiction",
+      "access": "General User"
+    },
+    {
+      "id": 2,
+      "title": "A Brief History of Time",
+      "category": "Science",
+      "access": "General User"
+    },
+    {
+      "id": 3,
+      "title": "Wings of Fire",
+      "category": "Biography",
+      "access": "General User"
+    },
+    {
+      "id": 4,
+      "title": "Visakhapatnam Port Ledgers, 1921",
+      "category": "Rare Manuscripts",
+      "access": "Admin"
+    },
+    {
+      "id": 5,
+      "title": "Palm-leaf Telugu Almanac",
+      "category": "Rare Manuscripts",
+      "access": "Admin"
+    },
+    {
+      "id": 6,
+      "title": "Staff Membership Register",
+      "category": "Administration",
+      "access": "Admin"
+    }
+  ]
+}
